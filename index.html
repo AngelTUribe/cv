@@ -9,37 +9,51 @@
   <body>
     <nav>
       <p>Angel Uribe</p>
-      <p><a href="contact.html">Contact Angel Uribe</a></p>
+      <p><a href="contact.html">Contact</a></p>
     </nav>
 
     <header>
-      <h1>Angel Uribe</h1>
+      <div class="header-inner">
+        <h1 class="shimmer">Angel Uribe</h1>
 
-      <img src="images/headshot.jpg" alt="Headshot of Angel Uribe" width="160" />
+        <img src="images/headshot.jpg" alt="Headshot of Angel Uribe" width="160" />
 
-      <p class="address">
-        Snellville GA 30039 &bull; (678)826-8679 &bull;
-        atu42461@uga.edu
-      </p>
+        <p class="address">
+          Snellville, GA &bull; <a href="tel:+16788268679">(678) 826-8679</a> &bull;
+          <a href="mailto:atu42461@uga.edu">atu42461@uga.edu</a>
+        </p>
 
-      <p class="tagline">
-        I am incredibly interested in web development as well as data analytics.
-        I like building websites that are intuitive for users.
-      </p>
+        <p class="tagline">
+          Computer Science student at UGA focused on building clean, user-friendly web apps and
+          visualizations. I enjoy turning messy data into clear interfaces and writing code that
+          feels simple to use.
+        </p>
+
+        <div class="header-links">
+          <a
+            class="pill"
+            href="https://www.linkedin.com/in/angel-t-uribe"
+            target="_blank"
+            rel="noopener noreferrer"
+            >LinkedIn</a
+          >
+          <a class="pill" href="contact.html">Send a Message</a>
+        </div>
+      </div>
     </header>
 
     <main>
-      <section>
+      <section class="reveal">
         <h3>Education</h3>
         <dl>
           <dt>University of Georgia</dt>
-          <dd>4.0</dd>
-          <dt>Bachelor of Computer Science</dt>
-          <dd>May 2027</dd>
+          <dd>GPA: 4.0</dd>
+          <dt>B.S. Computer Science</dt>
+          <dd>Expected May 2027</dd>
         </dl>
       </section>
 
-      <section>
+      <section class="reveal">
         <h3>Honors and Awards</h3>
         <dl>
           <dt>President's List</dt>
@@ -49,71 +63,86 @@
         </dl>
       </section>
 
-      <section>
+      <section class="reveal">
         <h3>Skills</h3>
         <ul>
-          <li>HTML</li>
-          <li>Java</li>
-          <li>JavaScript</li>
-          <li>React</li>
+          <li><strong>Front End:</strong> HTML, CSS, JavaScript, React</li>
+          <li><strong>Data / Viz:</strong> D3, charts, dashboards, data filtering</li>
+          <li><strong>Programming:</strong> Java, Node/Express basics</li>
+          <li><strong>Tools:</strong> Git/GitHub, VS Code, npm</li>
         </ul>
       </section>
 
-      <section>
+      <section class="reveal">
         <h3>Leadership and Experience</h3>
         <dl>
           <dt>
-            <a href="https://www.ups.com/" target="_blank" rel="noopener noreferrer"
-              >Intern at UPS</a
-            >
+            <a href="https://www.ups.com/" target="_blank" rel="noopener noreferrer">UPS — Software Intern</a>
           </dt>
-          <dd>2025-Present</dd>
+          <dd>2025–Present</dd>
 
-          <dt>Student Worker at UGA</dt>
-          <dd>2024-2025</dd>
+          <dt>University of Georgia — Student Worker</dt>
+          <dd>2024–2025</dd>
         </dl>
+        <ul class="sublist">
+          <li>Built internal-facing dashboards to help teams understand operational performance.</li>
+          <li>Worked with real data to surface trends, reduce clutter, and improve usability.</li>
+          <li>Collaborated with mentors to ship features on a weekly cadence.</li>
+        </ul>
       </section>
 
-      <section>
+      <section class="reveal">
         <h3>Projects</h3>
 
         <div class="three-col">
           <div class="card">
-            <h3>Building Output Analyzer</h3>
+            <div class="card-top">
+              <h3>Building Output Analyzer</h3>
+              <span class="chip">React • D3</span>
+            </div>
             <img
               src="images/project1.jpg"
               alt="Project image for Building Output Analyzer"
-              width="90"
+              width="160"
             />
             <ul>
-              <li>Built with React for my internship work.</li>
-              <li>Focused on showing activity by location and time.</li>
+              <li>Built a dashboard that visualizes facility output volume over time using interactive charts.</li>
+              <li>Added filtering by time range and location to reduce noise and make trends easier to spot.</li>
+              <li>Focused on clean UI: readable labels, responsive layouts, and fast interactions.</li>
             </ul>
           </div>
 
           <div class="card">
-            <h3>Zip to State Visualizer</h3>
+            <div class="card-top">
+              <h3>ZIP to State Visualizer</h3>
+              <span class="chip">React • D3</span>
+            </div>
             <img
               src="images/project2.jpg"
               alt="Project image for Zip to State Visualizer"
-              width="90"
+              width="160"
             />
             <ul>
-              <li>Built with React and D3.</li>
-              <li>Highlights a ZIP code on a map.</li>
+              <li>Created an interactive map that highlights the state for a given ZIP code input.</li>
+              <li>Rendered GeoJSON with D3 projections and used hover states for quick exploration.</li>
+              <li>Designed the page to feel simple and “tool-like” instead of cluttered.</li>
             </ul>
           </div>
 
           <div class="card">
-            <h3>Portfolio Website</h3>
+            <div class="card-top">
+              <h3>Portfolio Website</h3>
+              <span class="chip">HTML • CSS</span>
+            </div>
             <img
               src="images/project3.jpg"
               alt="Project image for Portfolio Website"
-              width="90"
+              width="160"
             />
             <ul>
-              <li>Personal site to show projects and experience.</li>
-              <li>Simple layout with a custom background.</li>
+              <li>Built a personal portfolio to showcase projects, experience, and contact information.</li>
+              <li>Implemented responsive layout and consistent typography to improve readability.</li>
+              <li>Optimized for quick navigation between sections and a clean first impression.</li>
             </ul>
           </div>
         </div>
@@ -122,13 +151,9 @@
 
     <footer>
       <p>
-        &copy; <a href="contact.html">Angel Uribe</a>
-        <a
-          href="https://www.linkedin.com/in/angel-t-uribe"
-          target="_blank"
-          rel="noopener noreferrer"
-          >LinkedIn</a
-        >
+        &copy; <a href="contact.html">Angel Uribe</a> &bull;
+        <a href="mailto:atu42461@uga.edu">atu42461@uga.edu</a> &bull;
+        <a href="https://www.linkedin.com/in/angel-t-uribe" target="_blank" rel="noopener noreferrer">LinkedIn</a>
       </p>
     </footer>
   </body>
